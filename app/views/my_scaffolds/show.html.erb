@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>My string:</strong>
+  <%= @my_scaffold.my_string %>
+</p>
+
+<p>
+  <strong>My integer:</strong>
+  <%= @my_scaffold.my_integer %>
+</p>
+
+<p>
+  <strong>My datetime:</strong>
+  <%= @my_scaffold.my_datetime %>
+</p>
+
+<p>
+  <strong>My boolean:</strong>
+  <%= @my_scaffold.my_boolean %>
+</p>
+
+<%= link_to 'Edit', edit_my_scaffold_path(@my_scaffold) %> |
+<%= link_to 'Back', my_scaffolds_path %>

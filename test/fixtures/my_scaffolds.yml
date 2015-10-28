@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  my_string: MyString
+  my_integer: 1
+  my_datetime: 2015-10-28 15:05:54
+  my_boolean: false
+
+two:
+  my_string: MyString
+  my_integer: 1
+  my_datetime: 2015-10-28 15:05:54
+  my_boolean: false

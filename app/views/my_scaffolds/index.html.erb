@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing My Scaffolds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>My string</th>
+      <th>My integer</th>
+      <th>My datetime</th>
+      <th>My boolean</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_scaffolds.each do |my_scaffold| %>
+      <tr>
+        <td><%= my_scaffold.my_string %></td>
+        <td><%= my_scaffold.my_integer %></td>
+        <td><%= my_scaffold.my_datetime %></td>
+        <td><%= my_scaffold.my_boolean %></td>
+        <td><%= link_to 'Show', my_scaffold %></td>
+        <td><%= link_to 'Edit', edit_my_scaffold_path(my_scaffold) %></td>
+        <td><%= link_to 'Destroy', my_scaffold, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My scaffold', new_my_scaffold_path %>
